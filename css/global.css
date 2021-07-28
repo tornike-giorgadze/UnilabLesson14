@@ -1,0 +1,193 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.part2 .main-box {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1800px;
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    background-color: royalblue;
+  }
+}
+
+.container .logo {
+  width: 100px;
+  height: 100px;
+}
+
+.container .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .container .header {
+    flex-direction: column;
+  }
+}
+
+.container ul {
+  display: flex;
+  margin-right: 30px;
+}
+
+@media (max-width: 900px) {
+  .container ul {
+    flex-direction: column;
+    padding: 20px;
+  }
+}
+
+.container li {
+  margin-left: 50px;
+  color: black;
+}
+
+.container li:hover {
+  color: red;
+}
+
+@media (max-width: 900px) {
+  .container li {
+    padding: 20px;
+  }
+}
+
+.part2 {
+  width: 1800px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.part2 .main-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.part2 .main-box .left-box {
+  margin-right: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.part2 .main-box .left-box .text1 {
+  font-size: 30px;
+  color: seagreen;
+  transition: all 10s linear 2s;
+}
+
+.part2 .main-box .left-box .text1:hover {
+  color: sienna;
+}
+
+.part2 .main-box .left-box .image {
+  margin-top: 100px;
+  padding: 30px;
+  width: 500px;
+  height: 250px;
+  transition: all 10s linear 2s;
+}
+
+.part2 .main-box .left-box .image:hover {
+  border-radius: 40%;
+  background-color: rebeccapurple;
+  margin-top: 30px;
+}
+
+@media (max-width: 700px) {
+  .part2 .main-box .left-box {
+    background-color: lightblue;
+  }
+}
+
+.part2 .main-box .right-box {
+  position: absolute;
+  top: 400px;
+  left: 650px;
+}
+
+.part2 .main-box .right-box .text2 {
+  font-size: 20px;
+  color: black;
+  transition: all 10s linear 2s;
+}
+
+.part2 .main-box .right-box .text2:hover {
+  font-size: 15px;
+  color: tan;
+}
+
+.part2 .main-box .right-box .text3 {
+  padding: 30px;
+  font-size: 20px;
+  color: black;
+  transition: all 10s linear 2s;
+}
+
+.part2 .main-box .right-box .text3:hover {
+  font-size: 15px;
+  color: springgreen;
+}
+
+@media (max-width: 700px) {
+  .part2 .main-box .right-box {
+    top: 900px;
+    left: 5px;
+    background-color: lightblue;
+  }
+}
+/*# sourceMappingURL=global.css.map */

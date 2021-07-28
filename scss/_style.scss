@@ -1,0 +1,101 @@
+.container{
+    max-width: 1800px;
+    width: 100%;
+    @media (max-width:1200px){
+        background-color: royalblue;
+    }
+    .logo{
+        width: $size03;
+        height: $size03;
+    }
+   .header{
+    @include d-flex(flex,space-between,center)
+    @media (max-width:900px){
+        flex-direction:column;
+    }
+   }
+   ul{
+      @include d-flex2(flex)
+       margin-right:$size05;
+       @media (max-width:900px){
+           flex-direction: column;
+           padding: $size08;
+       }
+   }
+   li{
+       margin-left:$size04;
+       color: $color04;
+       &:hover{
+           color: $color02;
+       }  
+     @media (max-width:900px){
+         padding: $size08;
+     }  
+   }
+}
+.part2{
+    width: $size01;
+    width: $size02;
+    @include d-flex(flex,space-between,center)
+    .main-box{
+        @include d-flex3(flex,space-between,center,column)
+        @extend %main-box;
+        padding:$size04;
+        .left-box{
+            margin-right: $size06;
+            @include d-flex3(flex,space-between,center,column)
+            .text1{
+                font-size:$size05;
+                color:$color05;
+                @include transitionHover(all,10s,linear,2s);
+              &:hover{
+                  color:sienna;
+              }  
+            }
+            .image{
+                margin-top: 100px;
+                padding:$size05;
+               width: 500px;
+                height: 250px;
+                @include transitionHover(all,10s,linear,2s);
+                &:hover{
+                    border-radius: 40%;
+                    background-color:rebeccapurple;
+                    margin-top: $size05;
+                }
+            }
+            @media (max-width:700px){
+                background-color: lightblue;
+            }
+        }
+        .right-box{
+            position: absolute;
+            top: $size10;
+            left: $size11;
+            .text2{
+                font-size:$size08;
+                color:$color04;
+                @include transitionHover(all,10s,linear,2s);
+               &:hover{
+                   font-size: $size09;
+                   color: $color06;
+               } 
+            }
+            .text3{
+                padding: $size05;
+                font-size: $size08;
+                color:$color04;
+                @include transitionHover(all,10s,linear,2s);
+               &:hover{
+                   font-size:$size09;
+                   color: $color07;
+               } 
+            }
+        @media (max-width:700px){
+            top:900px;
+            left: 5px;
+            background-color:lightblue;
+        }
+        }
+    }  
+}    

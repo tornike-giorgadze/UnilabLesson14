@@ -1,0 +1,21 @@
+@mixin d-flex ($display, $justify, $align){
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin d-flex2($display){
+    display: $display;
+}
+@mixin imagesize($max,$width){
+    max-width: $max;
+    width: $width;
+}
+@mixin d-flex3($display, $justify, $align, $flex) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $flex;
+}
+@mixin transitionHover($property,$duration,$type,$delay){
+    transition: $property $duration $type $delay;
+}
