@@ -45,6 +45,10 @@ table {
   margin: 0 auto;
 }
 
+body {
+  background-color: rgba(33, 172, 207, 0.836);
+}
+
 .container {
   max-width: 1800px;
   width: 100%;
@@ -59,6 +63,10 @@ table {
 .container .logo {
   width: 100px;
   height: 100px;
+}
+
+.container .logo:hover {
+  transform: rotate(40deg);
 }
 
 .container .header {
@@ -92,6 +100,7 @@ table {
 
 .container li:hover {
   color: red;
+  transform: rotate(20deg);
 }
 
 @media (max-width: 900px) {

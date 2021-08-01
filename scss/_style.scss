@@ -1,3 +1,6 @@
+body{
+    background-color: $color08;
+}
 .container{
     max-width: 1800px;
     width: 100%;
@@ -7,6 +10,9 @@
     .logo{
         width: $size03;
         height: $size03;
+        &:hover{
+            transform: rotate(40deg);
+        }
     }
    .header{
     @include d-flex(flex,space-between,center)
@@ -27,6 +33,7 @@
        color: $color04;
        &:hover{
            color: $color02;
+           transform: rotate(20deg);
        }  
      @media (max-width:900px){
          padding: $size08;
